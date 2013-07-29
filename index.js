@@ -19,7 +19,9 @@ module.exports = function(node, fn){
     // keyframes
     if (rule.keyframes) {
       rule.keyframes.forEach(function(keyframe){
-        fn(keyframe.declarations, rule);
+        if (keyframe.type == 'keyframe') {
+          fn(keyframe.declarations, rule);
+        }
       });
       return;
     }
