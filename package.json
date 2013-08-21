@@ -2,6 +2,13 @@
   "name": "rework-visit",
   "version": "1.0.0",
   "description": "Rework declaration visitor utility",
-  "keywords": ["css", "rework"],
-  "license": "MIT"
+  "keywords": [
+    "css",
+    "rework"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/visionmedia/rework-visit.git"
+  }
 }
