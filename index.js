@@ -1,4 +1,3 @@
-
 /**
  * Visit `node`'s declarations recursively and
  * invoke `fn(declarations, node)`.
@@ -8,11 +7,11 @@
  * @api private
  */
 
-module.exports = function(node, fn){
+module.exports = function visit(node, fn){
   node.rules.forEach(function(rule){
     // @media etc
     if (rule.rules) {
-      exports.declarations(rule, fn);
+      visit(rule, fn);
       return;
     }
 
