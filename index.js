@@ -29,6 +29,6 @@ module.exports = function(node, fn){
     // @charset, @import etc
     if (!rule.declarations) return;
 
-    fn(rule.declarations, node);
+    fn(rule.declarations, rule);
   });
 };
